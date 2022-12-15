@@ -1,0 +1,374 @@
+.container {
+	display: grid;
+	grid-template-columns: 0.3fr 2.4fr 0.3fr;
+	grid-template-rows: 0.5fr 1.7fr 0.8fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		'. Generating-Main .'
+		'. Working-area .'
+		'. a3 .';
+}
+.Generating-Main {
+	grid-area: Generating-Main;
+	background-color: white;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.Working-area {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-area: Working-area;
+	background-color: white;
+	padding: 0px;
+	border-radius: 25px 25px 0px 0px;
+	border: 0.5px solid grey;
+	border-bottom: none;
+}
+
+.a1 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		'x1'
+		'x2'
+		'x3';
+	grid-area: 1 / 1 / 2 / 2;
+	background-color: #a1dd70;
+	padding: 12px 30px;
+	padding-bottom: 0px;
+	border-radius: 25px 0px 0px 25px;
+}
+
+.x1 {
+	grid-area: x1;
+	padding: 10px 10px 10px 20px;
+	font-size: 15px;
+	margin: 0px 0px;
+	border-bottom: 2px solid white;
+}
+
+.x2 {
+	display: grid;
+	grid-template-columns: 0.7fr 0.9fr 1.4fr;
+	grid-template-rows: 0.7fr 1.3fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		'owner watcher participants'
+		'o1 w1 p1';
+	grid-area: x2;
+	padding: 30px 20px 0px 20px;
+	font-size: 16px;
+	margin: 2px 2px;
+	border-bottom: 2px solid white;
+	color: whitesmoke;
+}
+.owner {
+	grid-area: owner;
+}
+.watcher {
+	grid-area: watcher;
+	padding-left: 6px;
+}
+.participants {
+	grid-area: participants;
+	padding-left: 6px;
+}
+.o1 {
+	grid-area: o1;
+	position: inline;
+}
+.w1 {
+	grid-area: w1;
+}
+.p1 {
+	grid-area: p1;
+}
+.x3 {
+	grid-area: x3;
+	padding: 30px 20px 0px 20px;
+	font-size: 16px;
+	margin: 20px 2px;
+	color: whitesmoke;
+}
+
+.a2 {
+	grid-area: 1 / 2 / 2 / 3;
+	padding: 12px 30px;
+}
+
+.Ad1 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.5fr 2.4fr 0.7fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		'dadad'
+		'dda'
+		't222';
+	grid-area: 1 / 2 / 2 / 3;
+	padding: 12px 30px;
+	border-bottom: 0.5px solid grey;
+	border-bottom-right-radius: 25px;
+}
+
+.t222 {
+	display: grid;
+	grid-template-columns: 0.8fr 0.8fr 1.4fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		'Resss Resss Resss'
+		'd dddd .';
+	grid-area: t222;
+}
+
+.Resss {
+	grid-area: Resss;
+}
+
+.d {
+	grid-area: d;
+}
+
+.dddd {
+	grid-area: dddd;
+}
+
+.dda {
+	grid-area: dda;
+	padding: 15px 10px;
+	font-size: 16px;
+}
+
+.dadad {
+	display: grid;
+	grid-template-columns: 0.8fr 0.8fr 1.4fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: 'agenda task detailed';
+	grid-area: dadad;
+}
+.agenda {
+	grid-area: agenda;
+	padding: 5px 5px;
+	border-bottom: 0.5px solid grey;
+}
+.task {
+	grid-area: task;
+	padding: 5px 5px;
+	border-bottom: 0.5px solid grey;
+}
+.detailed {
+	grid-area: detailed;
+	padding: 5px 5px;
+	border-bottom: 0.5px solid grey;
+	text-align: right;
+}
+.agbtn {
+	background-color: white;
+	color: black;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 4px;
+	cursor: pointer;
+	border: none;
+}
+
+.a3 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.6fr 1.4fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		'd1'
+		'm1';
+	grid-area: a3;
+}
+
+.d1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: 'Followup .';
+	grid-area: d1;
+	padding: 12px 30px;
+	padding: 12px 30px;
+	border-radius: 0px 0px 25px 25px;
+	border: 0.5px solid grey;
+	border-top: none;
+}
+
+.Followup {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 10px;
+	grid-auto-flow: row;
+	grid-template-areas: 's1 s2 s3';
+	grid-area: Followup;
+	vertical-align: center;
+}
+
+.s1 {
+	grid-area: s1;
+	padding: 10px 4px;
+	border-radius: 0px;
+	border: 0.5px solid grey;
+}
+
+.s2 {
+	grid-area: s2;
+	padding: 10px 10px;
+	border-radius: 0px;
+	border: 0.5px solid grey;
+}
+
+.s3 {
+	grid-area: s3;
+	padding: 10px 10px;
+	border-radius: 0px;
+	border: 0.5px solid grey;
+}
+
+.m1 {
+	display: grid;
+	grid-template-columns: 0.7fr 1.5fr 0.8fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		'R22 f1 a22'
+		'R22 f1 dds';
+	grid-area: m1;
+}
+
+.R22 {
+	grid-area: R22;
+	padding: 25px 5px 7px 10px;
+}
+
+.f1 {
+	grid-area: f1;
+	padding: 6px;
+}
+
+.a22 {
+	grid-area: a22;
+	padding: 6px;
+}
+
+.dds {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: 'close submit';
+	grid-area: dds;
+	padding: 5px;
+}
+
+.close {
+	grid-area: close;
+}
+
+.submit {
+	grid-area: submit;
+}
+.button {
+	background-color: #4caf50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.buttonx {
+	background-color: white;
+	border: 0.5px solid grey;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.dview {
+	background-color: white;
+	border: 0.5px solid grey;
+	color: black;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 4px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.btn {
+	background-color: #eeeeee;
+	border: none;
+	color: black;
+	cursor: pointer;
+	padding: 12px 30px;
+	border: grey;
+	grid-column-gap: 10px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+	background-color: dodgerblue;
+}
+
+.parentDiv {
+	display: block;
+
+	height: 110px;
+
+	width: 400px;
+
+	font-size: 30px;
+}
+
+.icon {
+	margin-left: 10px;
+	float: right;
+}
+.checked {
+	color: orange;
+}
+.star {
+	padding: 12px 1px;
+}
+
+html,
+body,
+.container {
+	height: 100%;
+	margin: 0;
+}
